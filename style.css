@@ -24,29 +24,19 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 /*configurações de texto----------------------*/
 
-/*usei margem no h1 para a página não descer exatamente acima do título*/
+.main {
+  height: 40em;
+}
+
 /*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
 h1 {
   font-family: 'Roboto';
   font-size: 70px;
   font-weight: bolder;
   text-align: justify;
-  margin-top: 330px;
   margin-bottom: 0px;
-  padding: 0px;
-}
-
-/*h2 usei para os outros títulos*/
-h2 {
-  font-family: 'Roboto';
-  font-size: 70px;
-  font-weight: bolder;
-  text-align: justify;
-  margin: 0px;
   padding: 0px;
 }
 
@@ -60,8 +50,6 @@ p{
 .word-break {
    word-break: break-all;
 }
-
-
 
 /* configurações do 1º bloco----------------------------------*/
 #cabecalho {
@@ -94,14 +82,15 @@ img#terra_mar {
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 60%
+    top: 60%;
+
 }
 
 #form {
     align-items: center;
     background-color: #ececec;
-    width: 1000px;
-    height: 60px;
+    width: 60%;
+    height: 3.5em;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
@@ -150,17 +139,18 @@ button#btn_lupa {
   border-color:  #ececec;
   border-image: initial;
   border-radius: 0px;
+
 }
 svg#icone_lupa {
-    width: 30px;
-    height: 30px;
+    width: 3em;
+    height: 3em;
 }
 
 svg#icone_seta {
   color: black;
   fill: currentColor;
-  width: 43px;
-  height: 43px;
+  width: 3em;
+  height: 3em;
   background: #ffffff00;
   position: absolute;
   left: 0%;
@@ -179,9 +169,9 @@ svg#icone_seta {
 
 img#sist_ruim {
   position: absolute;
-  height: 130%;
+  max-height: auto;
   width: 45%;
-  top: 950px;
+  top: 120%;
   left:0px;
 }
 
@@ -192,6 +182,7 @@ img#sist_ruim {
   top: 0%;
   left: 30%;
   transform: translate(50%,125%);
+  display: table-row;
 
 }
 
@@ -211,6 +202,7 @@ img#sist_bom {
   transform: translate(0%,720%);
   color: #2a9d8fff;
   width: 500px;
+  display: flex;
 
 }
 
