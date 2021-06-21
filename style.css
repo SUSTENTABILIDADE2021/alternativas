@@ -27,24 +27,34 @@ html {
 /*configurações de texto----------------------*/
 
 .main {
-  height: 40em;
+
 }
 
 /*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
 h1 {
   font-family: 'Roboto';
-  font-size: 70px;
+  font-size: 6.5vw;
   font-weight: bolder;
   text-align: justify;
   margin-bottom: 0px;
   padding: 0px;
 }
+@media screen and (max-width: 600px) {
+  h1 {
+      font-size: 50px;
+  }
+}
 
 p{
   color: #282828;
   font-family: 'Open Sans';
-  font-size: 22px;
+  font-size: 2vw;
   text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  p {
+      font-size: 18px;
+  }
 }
 
 .word-break {
@@ -53,28 +63,31 @@ p{
 
 /* configurações do 1º bloco----------------------------------*/
 #cabecalho {
-
+  height: 710px;
 }
 /* personalizar o título e imagens-------------*/
 
 img#alternativas {
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 37%;
     left: 0%;
     right: 0%;
     margin-left: auto;
     margin-right: auto;
     top: 20%;
+    max-width: 100%;
+    max-height: auto;
 }
 
 img#terra_mar {
     position: absolute;
     margin: 0;
-    padding: 0;
-    top: 72%;
+    padding-top: 10%;
     left:0px;
     right: 0px;
+    bottom: -4em;
+
 }
 
 /* personalizar a barra_de_pesquisa----------*/
@@ -83,6 +96,9 @@ img#terra_mar {
     left: 0%;
     right: 0%;
     top: 60%;
+    max-width: 100%;
+    max-height: auto;
+    margin: 0%;
 
 }
 
@@ -99,6 +115,9 @@ img#terra_mar {
     right: 0%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 0%
 }
 
 #query {
@@ -139,70 +158,94 @@ button#btn_lupa {
   border-color:  #ececec;
   border-image: initial;
   border-radius: 0px;
-
+  max-width: 100%;
+  margin: 0;
 }
 svg#icone_lupa {
     width: 3em;
     height: 3em;
+    max-width: 100%;
+    max-height: auto;
 }
 
 svg#icone_seta {
   color: black;
   fill: currentColor;
-  width: 3em;
-  height: 3em;
+  width: 5.5%;
+  height: 5.5%;
   background: #ffffff00;
   position: absolute;
   left: 0%;
   right: 0%;
   margin-left: auto;
   margin-right: auto;
-  top: 80%;
+  top: 85%;
+  max-width: 100%;
+  max-height: auto;
+}
+@media screen and (max-width: 600px) {
+  svg#icone_seta {
+      width: 7%;
+      height: 7%;
+  }
 }
 
 
 
 /* configurações do 2º bloco----------------------------------*/
 #bloco_2 {
-
+  height: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-img#sist_ruim {
+img#sist_insustentavel {
   position: absolute;
   max-height: auto;
-  width: 45%;
-  top: 120%;
+  max-width: 100%;
+  width: 50%;
+  padding-top: 0%;
   left:0px;
+  margin: 0;
+
 }
 
 #conteudo_1 {
   color: #e76f51ff;
-  width: 500px;
-  position: absolute;
-  top: 0%;
-  left: 30%;
-  transform: translate(50%,125%);
-  display: table-row;
+  width: 45%;
+  top: -5em;
+  padding-left: 50%;
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  margin-right: 50%;
+  position: relative;
+  margin-top: 5em;
+  padding-bottom: 40%;
 
 }
 
-img#sist_bom {
+img#sist_sustentavel {
   position: absolute;
-  height: 130%;
-  width: 45%;
-  top: 1800px;
+  max-height: auto;
+  max-width: 100%;
+  width: 50%;
+  padding-top: 0;
   left:50%;
-  display: flex;
+  margin-top: -25%;
 }
 
 #conteudo_2 {
-  position: absolute;
-  top: 0%;
-  left:15%;
-  transform: translate(0%,720%);
   color: #2a9d8fff;
-  width: 500px;
-  display: flex;
+  width: 45%;
+  top: 0;
+  padding-left: 0%;
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  margin-right: 50%;
+  position: relative;
+  margin-top: 5em;
 
 }
 
@@ -220,6 +263,8 @@ img#sist_bom {
   left: 5%;
   color: #2a9d8fff;
   display: flex;
+  max-width: 100%;
+  max-height: auto;
 }
 
 img#gaia {
@@ -229,13 +274,15 @@ img#gaia {
   left: 3%;
   top: 365%;
   display: block;
+  max-width: 100%;
+  max-height: auto;
 }
 
 .texto-subindo {
   position: absolute;
   border-radius: 15px;
-  height: 800px;
-  width: 360px;
+  height: 100em;
+  width: 20em;
   background-color: #eeeeee;
   left:69.5%;
   top: 390%;
@@ -245,6 +292,8 @@ img#gaia {
   white-space:normal;
   display: flex;
   padding: 3%;
+  max-width: 100%;
+  max-height: auto;
 }
 
 /**Styling scrollable elements*/
