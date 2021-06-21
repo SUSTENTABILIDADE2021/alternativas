@@ -199,7 +199,7 @@ svg#icone_seta {
   padding: 0;
 }
 
-img#sist_ruim {
+img#sist_insustentavel {
   position: absolute;
   max-height: auto;
   max-width: 100%;
@@ -221,28 +221,31 @@ img#sist_ruim {
   margin-right: 50%;
   position: relative;
   margin-top: 5em;
+  padding-bottom: 40%;
 
 }
 
-img#sist_bom {
+img#sist_sustentavel {
   position: absolute;
-  height: 130%;
-  width: 45%;
-  top: 1800px;
-  left:50%;
-  max-width: 100%;
   max-height: auto;
+  max-width: 100%;
+  width: 50%;
+  padding-top: 0;
+  left:50%;
+  margin-top: -25%;
 }
 
 #conteudo_2 {
-  position: absolute;
-  top: 0%;
-  left:15%;
-  transform: translate(0%,720%);
   color: #2a9d8fff;
-  width: 500px;
+  width: 45%;
+  top: 0;
+  padding-left: 0%;
   max-width: 100%;
   max-height: auto;
+  display: block;
+  margin-right: 50%;
+  position: relative;
+  margin-top: 5em;
 
 }
 
