@@ -1,56 +1,23 @@
-/* paleta de cores (as cores estão no arquivo paleta_de_cores, dentro da pasta alternativas) --------------------
+/* paleta de cores --------------------
 --charcoal: #264653ff;
 --persian-green: #2a9d8fff;
 --orange-yellow-crayola: #e9c46aff;
 --sandy-brown: #f4a261ff;
 --burnt-sienna: #e76f51ff;
-
 --very light grey: #ececec;
 --cinza do texto: #282828;
-
 --transparent: #ffffff00;
 -------------------------------------*/
-
 
 /*fontes-------------------------------
 --titulos: Roboto
 --texto: Open Sans
 --------------------------------------*/
 
-
-
 /*configurações do html----------------------*/
 html {
   scroll-behavior: smooth;
 }
-
-/*configurações de texto----------------------*/
-
-.main {
-  height: 40em;
-}
-
-/*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
-h1 {
-  font-family: 'Roboto';
-  font-size: 70px;
-  font-weight: bolder;
-  text-align: justify;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-
-p{
-  color: #282828;
-  font-family: 'Open Sans';
-  font-size: 22px;
-  text-align: justify;
-}
-
-.word-break {
-   word-break: break-all;
-}
-
 /* configurações do 1º bloco----------------------------------*/
 #cabecalho {
 
@@ -82,15 +49,14 @@ img#terra_mar {
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 60%;
-
+    top: 60%
 }
 
-#form {
+form {
     align-items: center;
     background-color: #ececec;
-    width: 60%;
-    height: 3.5em;
+    width: 1000px;
+    height: 60px;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
@@ -101,7 +67,7 @@ img#terra_mar {
     margin-right: auto;
 }
 
-#query {
+input {
     all: unset;
     font: 16px system-ui;
     color: black;
@@ -139,51 +105,64 @@ button#btn_lupa {
   border-color:  #ececec;
   border-image: initial;
   border-radius: 0px;
-
 }
 svg#icone_lupa {
-    width: 3em;
-    height: 3em;
+    width: 30px;
+    height: 30px;
 }
 
 svg#icone_seta {
   color: black;
   fill: currentColor;
-  width: 3em;
-  height: 3em;
+  width: 43px;
+  height: 43px;
   background: #ffffff00;
   position: absolute;
   left: 0%;
   right: 0%;
   margin-left: auto;
   margin-right: auto;
-  top: 80%;
+  transform: translate(0%,270%);
+
 }
 
-
-
 /* configurações do 2º bloco----------------------------------*/
-#bloco_2 {
+h1 {
+  color: #264653ff;
+  font-family: 'Helvetica';
+  font-size: 70px;
+  font-weight: bolder;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
 
+p{
+  color: #282828;
+  font-family: 'Open Sans';
+  font-size: 22px;
+  text-align: justify;
+  width: 500px;
+  margin: 0px;
+}
+
+.word-break {
+   word-break: break-all;
 }
 
 img#sist_ruim {
   position: absolute;
-  max-height: auto;
+  height: 130%;
   width: 45%;
-  top: 120%;
+  top: 950px;
   left:0px;
 }
 
 #conteudo_1 {
-  color: #e76f51ff;
-  width: 500px;
   position: absolute;
   top: 0%;
   left: 30%;
-  transform: translate(50%,125%);
-  display: table-row;
-
+  transform: translate(50%,450%);
 }
 
 img#sist_bom {
@@ -192,85 +171,58 @@ img#sist_bom {
   width: 45%;
   top: 1800px;
   left:50%;
-  display: flex;
 }
 
 #conteudo_2 {
   position: absolute;
   top: 0%;
   left:15%;
-  transform: translate(0%,720%);
-  color: #2a9d8fff;
-  width: 500px;
-  display: flex;
-
+  transform: translate(0%,900%);
 }
-
-
 
 /* configurações do 3º bloco----------------------------------*/
-#bloco_3 {
 
-}
-
-#hipotese_de_gaia {
-  position: absolute;
+#conteudo_3 {
   width: 360px;
-  top: 397%;
-  left: 5%;
-  color: #2a9d8fff;
-  display: flex;
+  padding-top: 202%;
+  padding-left: 5%;
 }
 
 img#gaia {
   width: 90%;
-  height: 170%;
-  position: absolute;
-  left: 3%;
-  top: 365%;
+}
+/*-----------------abas de oções de itens sustentáveis---------------*/
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
   display: block;
+  padding: 0px 20px;
+}
+a:hover{
+  background-color: rgba(255,255,255,.3);
+}
+nav {
+  background-color: gray;
+  height: 50px;
+}
+ul#ul-principal {
+  background: GRAY;
+  width: 90%;
+  margin: auto;
+}
+.li-p {
+  line-height: 50px;
+  float: leftu;
+}
+ul li ul li {
+  background-color: GRAY;
 }
 
-.texto-subindo {
-  position: absolute;
-  border-radius: 15px;
-  height: 800px;
-  width: 360px;
-  background-color: #eeeeee;
-  left:69.5%;
-  top: 390%;
-  box-shadow: 10px 10px 10px #e1e1e1;
-  overflow:hidden;
-  word-break:break-all;
-  white-space:normal;
-  display: flex;
-  padding: 3%;
+.ul-beleza, .ul-artesanato, .ul-alimentos {
+  display: none;
 }
 
-/**Styling scrollable elements*/
-
-.js-scroll {
-  opacity: 0;
-  transition: opacity 1300ms;
-}
-
-.js-scroll.scrolled {
-  opacity: 1;
-}
-
-.scrolled.deslizar-base {
-  animation: fade-in-bottom 1.3s ;
-}
-
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(500px);
-    transform: translateY(500px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+/*----------------- fim do código de abas de opções-------------*/
