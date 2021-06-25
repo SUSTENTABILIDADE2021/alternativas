@@ -201,6 +201,8 @@ svg#icone_seta {
 }
 
 img#sist_insustentavel {
+
+  position: absolute;
   max-height: auto;
   max-width: 100%;
   width: 50%;
@@ -226,6 +228,7 @@ img#sist_insustentavel {
 }
 
 img#sist_sustentavel {
+
   max-height: auto;
   max-width: 100%;
   width: 52%;
@@ -234,6 +237,14 @@ img#sist_sustentavel {
   margin-top: -25%;
   position: absolute;
 
+
+  position: absolute;
+  max-height: auto;
+  max-width: 100%;
+  width: 50%;
+  padding-top: 0;
+  left:50%;
+  margin-top: -25%;
 }
 
 #conteudo_2 {
@@ -249,6 +260,7 @@ img#sist_sustentavel {
   margin-top: 5em;
   margin-bottom: 35vw;
   left:2%;
+
 
 }
 
