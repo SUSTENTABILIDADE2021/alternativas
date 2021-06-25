@@ -20,7 +20,7 @@
       <body>
 
           <!--1º bloco-->
-          <div class="main" id="cabecalho">
+          <div id="cabecalho">
 
                 <!--título e logo-->
                 <img id="alternativas" src="titulo.svg">
@@ -68,14 +68,12 @@
                   </svg>
                 </a>
 
-
-
           </div>
 
           <!--2º bloco-->
-          <section id="bloco_2">
+          <div id="bloco_2">
 
-                <img id="sist_ruim" src="sist_ruim.svg" >
+                <img id="sist_insustentavel" src="sist_insustentavel.svg" >
 
                 <div class="main" id="conteudo_1">
 
@@ -88,6 +86,7 @@
 
 
 
+                <img id="sist_sustentavel" src="sist_sustentavel.svg" >
 
                 <div class="main" id="conteudo_2">
 
@@ -98,74 +97,77 @@
 
                   </div>
 
-                      <img id="sist_bom" src="sist.bom.png" >
 
-          </section>
 
-          <!--3º bloco-->
-          <div class="main" id="bloco_3">
+          <div id="bloco_3">
 
-                  <div class="main" id="hipotese_de_gaia">
+                          <div class="main" id="hipotese_de_gaia">
 
-                      <h1>HIPÓTESE DE GAIA</h1>
+                              <h1>HIPÓTESE DE GAIA</h1>
+
+                          </div>
+
+                          <img id="gaia" src="logo_gaia_colorido.svg" >
+
+                          <!--texto subindo-->
+                          <div class="texto-subindo js-scroll deslizar-base">
+                              <p><em class="word-break">
+                                Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                              </em></p>
+
+                              <!--dizer para o javascript para o texto subir quando a gaia aparecer na tela-->
+                              <script>
+                                    const scrollElements = document.querySelectorAll(".texto-subindo");
+
+                                    const elementInView = (el, dividend = 1) => {
+                                      const elementTop = el.getBoundingClientRect().top;
+
+                                      return (
+                                        elementTop <=
+                                        (window.innerHeight || document.documentElement.clientHeight) / dividend
+                                      );
+                                    };
+
+                                    const elementOutofView = (el) => {
+                                      const elementTop = el.getBoundingClientRect().top;
+
+                                      return (
+                                        elementTop > (window.innerHeight || document.documentElement.clientHeight)
+                                      );
+                                    };
+
+                                    const displayScrollElement = (element) => {
+                                      element.classList.add("scrolled");
+                                    };
+
+                                    const hideScrollElement = (element) => {
+                                      element.classList.remove("scrolled");
+                                    };
+
+                                    const handleScrollAnimation = () => {
+                                      scrollElements.forEach((el) => {
+                                        if (elementInView(el, 1.25)) {
+                                          displayScrollElement(el);
+                                        } else if (elementOutofView(el)) {
+                                          hideScrollElement(el)
+                                        }
+                                      })
+                                    }
+
+                                    window.addEventListener("scroll", () => {
+                                      handleScrollAnimation();
+                                    });
+                              </script>
+                          </div>
 
                   </div>
 
-                  <img id="gaia" src="logo_gaia_colorido.svg" >
-
-                  <!--texto subindo-->
-                  <div class="texto-subindo js-scroll deslizar-base">
-                      <p><em class="word-break">
-                        Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                      </em></p>
-
-                      <!--dizer para o javascript para o texto subir quando a gaia aparecer na tela-->
-                      <script>
-                            const scrollElements = document.querySelectorAll(".texto-subindo");
-
-                            const elementInView = (el, dividend = 1) => {
-                              const elementTop = el.getBoundingClientRect().top;
-
-                              return (
-                                elementTop <=
-                                (window.innerHeight || document.documentElement.clientHeight) / dividend
-                              );
-                            };
-
-                            const elementOutofView = (el) => {
-                              const elementTop = el.getBoundingClientRect().top;
-
-                              return (
-                                elementTop > (window.innerHeight || document.documentElement.clientHeight)
-                              );
-                            };
-
-                            const displayScrollElement = (element) => {
-                              element.classList.add("scrolled");
-                            };
-
-                            const hideScrollElement = (element) => {
-                              element.classList.remove("scrolled");
-                            };
-
-                            const handleScrollAnimation = () => {
-                              scrollElements.forEach((el) => {
-                                if (elementInView(el, 1.25)) {
-                                  displayScrollElement(el);
-                                } else if (elementOutofView(el)) {
-                                  hideScrollElement(el)
-                                }
-                              })
-                            }
-
-                            window.addEventListener("scroll", () => {
-                              handleScrollAnimation();
-                            });
-                      </script>
-
-            </div>
 
           </div>
+
+          <!--3º bloco-->
+
+
 
       </body>
 
