@@ -20,7 +20,10 @@
 
 
 /*configurações do html----------------------*/
-html {
+html,
+body {
+  height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -48,7 +51,7 @@ h1 {
 p{
   color: #282828;
   font-family: 'Open Sans';
-  font-size: 2vw;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   text-align: justify;
 }
 @media screen and (max-width: 600px) {
@@ -57,37 +60,35 @@ p{
   }
 }
 
+
 .word-break {
    word-break: break-all;
 }
 
 /* configurações do 1º bloco----------------------------------*/
 #cabecalho {
-  height: 710px;
+  height: 100%;
 }
 /* personalizar o título e imagens-------------*/
 
 img#alternativas {
-    position: absolute;
-    width: 95%;
-    height: 37%;
-    left: 0%;
-    right: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    top: 20%;
-    max-width: 100%;
-    max-height: auto;
+      position: absolute;
+      width: 92vw;
+      height: 37%;
+      left: 0%;
+      right: 0%;
+      margin: auto;
+      top: 20%;
+      max-width: 100%;
 }
 
 img#terra_mar {
     position: absolute;
     margin: 0;
-    padding-top: 10%;
     left:0px;
     right: 0px;
+    width: 100%;
     bottom: -4em;
-
 }
 
 /* personalizar a barra_de_pesquisa----------*/
@@ -99,14 +100,13 @@ img#terra_mar {
     max-width: 100%;
     max-height: auto;
     margin: 0%;
-
 }
 
 #form {
     align-items: center;
     background-color: #ececec;
-    width: 60%;
-    height: 3.5em;
+    width: 70%;
+    height: 75px;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
@@ -117,12 +117,13 @@ img#terra_mar {
     margin-right: auto;
     max-width: 100%;
     max-height: auto;
-    margin-bottom: 0%
+    margin-bottom: 0%;
 }
+
 
 #query {
     all: unset;
-    font: 16px system-ui;
+    font: 20px system-ui;
     color: black;
     height: 100%;
     width: 100%;
@@ -132,6 +133,7 @@ img#terra_mar {
 ::placeholder {
     color: black;
     opacity: 0.7;
+    font-size: 20pt;
 }
 
 button#btn_lupa {
@@ -185,21 +187,21 @@ svg#icone_seta {
 }
 @media screen and (max-width: 600px) {
   svg#icone_seta {
-      width: 7%;
-      height: 7%;
+      width: 10%;
+      height: 10%;
   }
 }
 
-
-
 /* configurações do 2º bloco----------------------------------*/
 #bloco_2 {
-  height: 0px;
-  margin: 0;
+  height: 100%;
   padding: 0;
+  margin-bottom: 1vw;
+
 }
 
 img#sist_insustentavel {
+
   position: absolute;
   max-height: auto;
   max-width: 100%;
@@ -207,7 +209,7 @@ img#sist_insustentavel {
   padding-top: 0%;
   left:0px;
   margin: 0;
-
+  position: absolute;
 }
 
 #conteudo_1 {
@@ -226,6 +228,16 @@ img#sist_insustentavel {
 }
 
 img#sist_sustentavel {
+
+  max-height: auto;
+  max-width: 100%;
+  width: 52%;
+  padding-top: 0;
+  left:50%;
+  margin-top: -25%;
+  position: absolute;
+
+
   position: absolute;
   max-height: auto;
   max-width: 100%;
@@ -246,10 +258,11 @@ img#sist_sustentavel {
   margin-right: 50%;
   position: relative;
   margin-top: 5em;
+  margin-bottom: 35vw;
+  left:2%;
+
 
 }
-
-
 
 /* configurações do 3º bloco----------------------------------*/
 #bloco_3 {
@@ -257,43 +270,42 @@ img#sist_sustentavel {
 }
 
 #hipotese_de_gaia {
-  position: absolute;
   width: 360px;
-  top: 397%;
-  left: 5%;
+  left: 2%;
   color: #2a9d8fff;
   display: flex;
   max-width: 100%;
   max-height: auto;
+  position: absolute;
+  z-index: 2;
+  margin-top: 11vw;
 }
 
 img#gaia {
-  width: 90%;
-  height: 170%;
-  position: absolute;
+  width: 50%;
   left: 3%;
-  top: 365%;
-  display: block;
+  margin-top: -100px;
   max-width: 100%;
   max-height: auto;
+  position: absolute;
+  margin-left:20%;
+  z-index: 1;
 }
 
 .texto-subindo {
-  position: absolute;
-  border-radius: 15px;
-  height: 100em;
-  width: 20em;
-  background-color: #eeeeee;
-  left:69.5%;
-  top: 390%;
-  box-shadow: 10px 10px 10px #e1e1e1;
-  overflow:hidden;
-  word-break:break-all;
-  white-space:normal;
-  display: flex;
-  padding: 3%;
-  max-width: 100%;
-  max-height: auto;
+      border-radius: 15px;
+      height: 50vw;
+      width: 30vw;
+      background-color: #eeeeee;
+      margin-left: 62%;
+      box-shadow: 10px 10px 10px #e1e1e1;
+      overflow: hidden;
+      word-break: break-all;
+      white-space: normal;
+      display: flex;
+      padding: 3%;
+      max-width: 100%;
+      z-index: 0;
 }
 
 /**Styling scrollable elements*/
