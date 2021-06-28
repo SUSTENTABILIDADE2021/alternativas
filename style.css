@@ -4,6 +4,7 @@
 --orange-yellow-crayola: #e9c46aff;
 --sandy-brown: #f4a261ff;
 --burnt-sienna: #e76f51ff;
+--verde-agua: #88C2C8;
 
 --very light grey: #ececec;
 --cinza do texto: #282828;
@@ -64,6 +65,42 @@ p{
 .word-break {
    word-break: break-all;
 }
+
+/*-----------------abas de oções de itens sustentáveis---------------*/
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 0px 20px;
+}
+a:hover{
+  background-color: rgba(255,255,255,.3);
+}
+nav {
+  background-color: gray;
+  height: 50px;
+}
+ul#ul-principal {
+  background: GRAY;
+  width: 90%;
+  margin: auto;
+}
+.li-p {
+  line-height: 50px;
+  float: leftu;
+}
+ul li ul li {
+  background-color: GRAY;
+}
+
+.ul-beleza, .ul-artesanato, .ul-alimentos {
+  display: none;
+}
+
+/*----------------- fim do código de abas de opções-------------*/
 
 /* configurações do 1º bloco----------------------------------*/
 #cabecalho {
@@ -201,8 +238,6 @@ svg#icone_seta {
 }
 
 img#sist_insustentavel {
-
-  position: absolute;
   max-height: auto;
   max-width: 100%;
   width: 50%;
@@ -228,7 +263,6 @@ img#sist_insustentavel {
 }
 
 img#sist_sustentavel {
-
   max-height: auto;
   max-width: 100%;
   width: 52%;
@@ -237,14 +271,6 @@ img#sist_sustentavel {
   margin-top: -25%;
   position: absolute;
 
-
-  position: absolute;
-  max-height: auto;
-  max-width: 100%;
-  width: 50%;
-  padding-top: 0;
-  left:50%;
-  margin-top: -25%;
 }
 
 #conteudo_2 {
@@ -260,7 +286,6 @@ img#sist_sustentavel {
   margin-top: 5em;
   margin-bottom: 35vw;
   left:2%;
-
 
 }
 
