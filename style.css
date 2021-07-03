@@ -1,47 +1,248 @@
-/* paleta de cores --------------------
+/*! ícones:
+ * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+
+/* paleta de cores (as cores estão no arquivo paleta_de_cores, dentro da pasta alternativas) --------------------
 --charcoal: #264653ff;
 --persian-green: #2a9d8fff;
 --orange-yellow-crayola: #e9c46aff;
 --sandy-brown: #f4a261ff;
 --burnt-sienna: #e76f51ff;
+--verde-agua: #88C2C8;
+
 --very light grey: #ececec;
 --cinza do texto: #282828;
+
 --transparent: #ffffff00;
 -------------------------------------*/
+
 
 /*fontes-------------------------------
 --titulos: Roboto
 --texto: Open Sans
 --------------------------------------*/
 
+
+
 /*configurações do html----------------------*/
-html {
+html,
+body {
+  height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
 }
+
+/*configurações de texto----------------------*/
+
+.main {
+
+}
+
+/*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
+h1 {
+  font-family: 'Roboto';
+  font-size: 6.5vw;
+  font-weight: bolder;
+  text-align: justify;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+      font-size: 50px;
+  }
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-weight: normal;
+  padding: 0px;
+  margin: 0;
+  margin-top: 1vw;
+  font-weight: 400;
+  font-size: calc(15px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+p{
+  color: #282828;
+  font-family: 'Open Sans';
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  p {
+      font-size: 18px;
+  }
+}
+
+
+.word-break {
+   word-break: break-all;
+}
+
+/*-----------------abas de oções de itens sustentáveis---------------*/
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Open Sans';
+  display: block;
+  padding: 0px 0px;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  padding: 0px 50px;
+}
+
+#menu {
+  height: 3em;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  padding:5px;
+}
+nav {
+  background-color: none;
+}
+ul#ul-principal {
+  background: none;
+  width: 90%;
+  margin: auto;
+
+}
+.li-p {
+  line-height: 2em;
+  float: center;
+}
+ul li ul li {
+  background-color: none;
+    font-family: 'Open Sans';
+}
+
+button {
+  background-color:#ffffff00;
+  border:0;
+  margin-left: 21vw;
+}
+.dropdown {
+  overflow: hidden;
+  float: left;
+  margin-left: 73%;
+  margin-top: 2%;
+  background-color: none;
+
+}
+.dropdown1 {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: none;
+  margin: 0;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+
+.navbar a:hover, .dropdown:hover {
+  background-color: none;
+  border-radius: 15px;
+}
+
+.dropbtn:hover {
+  background-color: #fb917b;
+  border-radius: 15px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eeeeee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #e1e1e1;
+  z-index: 1;
+  border-radius: 15px;
+  text-align: center;
+  padding: auto;
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #eeeeee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #e1e1e1;
+  z-index: 2;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+.dropdown-content1 a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  text-align: center;
+}
+
+.dropdown-content1 a:hover {
+  text-align: center;
+  background-color: #2c9c8c;
+  border-radius: 15px
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+
+
+
+/*----------------- fim do código de abas de opções-------------*/
+
 /* configurações do 1º bloco----------------------------------*/
 #cabecalho {
-
+  height: 100%;
 }
 /* personalizar o título e imagens-------------*/
 
 img#alternativas {
-    position: absolute;
-    width: 100%;
-    height: 37%;
-    left: 0%;
-    right: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    top: 20%;
+      position: absolute;
+      width: 92vw;
+      height: 37%;
+      left: 0%;
+      right: 0%;
+      margin: auto;
+      top: 20%;
+      max-width: 100%;
 }
 
 img#terra_mar {
     position: absolute;
     margin: 0;
-    padding: 0;
-    top: 72%;
     left:0px;
     right: 0px;
+    width: 100%;
+    bottom: -4em;
 }
 
 /* personalizar a barra_de_pesquisa----------*/
@@ -49,14 +250,17 @@ img#terra_mar {
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 60%
+    top: 60%;
+    max-width: 100%;
+    max-height: auto;
+    margin: 0%;
 }
 
-form {
+#form {
     align-items: center;
     background-color: #ececec;
-    width: 1000px;
-    height: 60px;
+    width: 70%;
+    height: 75px;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
@@ -65,11 +269,15 @@ form {
     right: 0%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 0%;
 }
 
-input {
+
+#query {
     all: unset;
-    font: 16px system-ui;
+    font: 20px system-ui;
     color: black;
     height: 100%;
     width: 100%;
@@ -79,6 +287,7 @@ input {
 ::placeholder {
     color: black;
     opacity: 0.7;
+    font-size: 20pt;
 }
 
 button#btn_lupa {
@@ -105,124 +314,193 @@ button#btn_lupa {
   border-color:  #ececec;
   border-image: initial;
   border-radius: 0px;
+  max-width: 100%;
+  margin: 0;
 }
 svg#icone_lupa {
-    width: 30px;
-    height: 30px;
+    width: 3em;
+    height: 3em;
+    max-width: 100%;
+    max-height: auto;
 }
 
 svg#icone_seta {
   color: black;
   fill: currentColor;
-  width: 43px;
-  height: 43px;
+  width: 5.5%;
+  height: 5.5%;
   background: #ffffff00;
   position: absolute;
   left: 0%;
   right: 0%;
   margin-left: auto;
   margin-right: auto;
-  transform: translate(0%,270%);
-
+  top: 85%;
+  max-width: 100%;
+  max-height: auto;
+}
+@media screen and (max-width: 600px) {
+  svg#icone_seta {
+      width: 10%;
+      height: 10%;
+  }
 }
 
 /* configurações do 2º bloco----------------------------------*/
-h1 {
-  color: #264653ff;
-  font-family: 'Helvetica';
-  font-size: 70px;
-  font-weight: bolder;
-  text-align: justify;
-  margin: 0;
+#bloco_2 {
+  height: 100%;
   padding: 0;
+  margin-bottom: 1vw;
+  position: relative;
 }
 
-p{
-  color: #282828;
-  font-family: 'Open Sans';
-  font-size: 22px;
-  text-align: justify;
-  width: 500px;
-  margin: 0px;
-}
-
-.word-break {
-   word-break: break-all;
-}
-
-img#sist_ruim {
-  position: absolute;
-  height: 130%;
-  width: 45%;
-  top: 950px;
+img#sist_insustentavel {
+  max-height: auto;
+  max-width: 100%;
+  width: 50%;
+  padding-top: 0%;
   left:0px;
+  margin: 0;
+  position: absolute;
 }
 
 #conteudo_1 {
-  position: absolute;
-  top: 0%;
-  left: 30%;
-  transform: translate(50%,450%);
+  color: #e76f51ff;
+  width: 45%;
+  top: -5em;
+  padding-left: 50%;
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  margin-right: 50%;
+  position: relative;
+  margin-top: 5em;
+  padding-bottom: 40%;
+
 }
 
-img#sist_bom {
+img#sist_sustentavel {
+  max-height: auto;
+  max-width: 100%;
+  width: 52%;
+  padding-top: 0;
+  left:47%;
+  margin-top: -25%;
   position: absolute;
-  height: 130%;
-  width: 45%;
-  top: 1800px;
-  left:50%;
+
 }
 
 #conteudo_2 {
-  position: absolute;
-  top: 0%;
-  left:15%;
-  transform: translate(0%,900%);
+  color: #2a9d8fff;
+  width: 45%;
+  top: 0;
+  padding-left: 0%;
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  margin-right: 50%;
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 35vw;
+  left:2%;
+
 }
 
 /* configurações do 3º bloco----------------------------------*/
+#bloco_3 {
+  margin-bottom: 2vw;
+}
 
-#conteudo_3 {
+#hipotese_de_gaia {
   width: 360px;
-  padding-top: 202%;
-  padding-left: 5%;
+  left: 2%;
+  color: #2a9d8fff;
+  display: flex;
+  max-width: 100%;
+  max-height: auto;
+  position: absolute;
+  z-index: 2;
+  margin-top: 11vw;
 }
 
 img#gaia {
-  width: 90%;
-}
-/*-----------------abas de oções de itens sustentáveis---------------*/
-ul{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-  color: black;
-  display: block;
-  padding: 0px 20px;
-}
-a:hover{
-  background-color: rgba(255,255,255,.3);
-}
-nav {
-  background-color: gray;
-  height: 50px;
-}
-ul#ul-principal {
-  background: GRAY;
-  width: 90%;
-  margin: auto;
-}
-.li-p {
-  line-height: 50px;
-  float: leftu;
-}
-ul li ul li {
-  background-color: GRAY;
+  width: 50%;
+  left: 3%;
+  margin-top: -100px;
+  max-width: 100%;
+  max-height: auto;
+  position: absolute;
+  margin-left:20%;
+  z-index: 1;
 }
 
-.ul-beleza, .ul-artesanato, .ul-alimentos {
-  display: none;
+.texto-subindo {
+      border-radius: 15px;
+      height: 50vw;
+      width: 30vw;
+      background-color: #eeeeee;
+      margin-left: 62%;
+      box-shadow: 10px 10px 10px #e1e1e1;
+      overflow: hidden;
+      word-break: break-all;
+      white-space: normal;
+      display: flex;
+      padding: 3%;
+      max-width: 100%;
+      z-index: 0;
 }
 
-/*----------------- fim do código de abas de opções-------------*/
+/**Styling scrollable elements*/
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 1300ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.deslizar-base {
+  animation: fade-in-bottom 1.3s ;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*rodapé------------------------------*/
+#rodape {
+  background-color:#2a9d8fff;
+  color: white;
+  height: 20vw;
+  padding-left: 7vw;
+  padding-top: 2vw;
+  z-index: 0;
+
+}
+
+#links {
+  padding-left: 50%;
+  margin-top: -10%;
+  color: white;
+}
+
+#grupo {
+  height:4vw;
+  background-color: #264653ff;
+  z-index: 1;
+  margin-top: -4vw;
+  color: white;
+  text-align: center;
+
+}

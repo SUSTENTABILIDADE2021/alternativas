@@ -2,24 +2,91 @@
 <html>
 
       <head>
+            <!--site dos ícones: https://icons.getbootstrap.com/-->
+
+            <!--importar as fontes usadas-->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
             <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+            <!--icone que aparece na página no navegador-->
             <link rel="stylesheet" href="style.css">
+            <link rel="shortcut icon" href="favicon.ico" />
+
+            <!--título da página no navegador-->
+            <title>Alternativas</title>
+
       </head>
 
       <body>
 
-          <!--1º bloco-->
-          <div class="main" id="cabecalho">
-                <!--fundo mar e terra-->
-                <img id="terra_mar" src="terramar.svg">
+        <!--abas de itens sustentáveis-->
+        <nav>
+              <div class="dropdown">
+                  <button><img id="menu" src="water.svg">
 
-                <!--título-->
+              </button>
+
+                <div class="dropdown-content">
+
+                <ul id ="ul-principal">
+
+                <li class="li-p">
+                  <div class="dropdown1">
+                    <button class="dropbtn">
+                      <a href="cosmeticos.html">COSMÉTICOS</a>
+                   </button>
+
+                   <div class="dropdown-content1">
+                   <ul class="ul-beleza">
+                            <li><a href="esfoliante.html">Esfoliante</a></li>
+                            <li><a href="">link 2</li>
+                            <li><a href="">link 3</li>
+                            <li><a href="">link 4</li>
+                  </ul>
+                </div>
+                </div>
+                </li>
+
+                 <li class="li-p">
+                   <div class="dropdown1">
+                   <button class="dropbtn"><a href="">ARTESANATO</a></button>
+                      <div class="dropdown-content1">
+                      <ul class="ul-artesanato">
+                            <li><a href="">link 1</li>
+                            <li><a href="">link 2</li>
+                            <li><a href="">link 3</li>
+                      </ul>
+                      </div>
+                      </div>
+                  </li>
+
+
+                 <li class="li-p">
+                    <div class="dropdown1">
+                   <button class="dropbtn"<a href="">RECEITAS DE ALIMENTOS</a></button>
+                      <div class="dropdown-content1">
+                      <ul class="ul-alimentos">
+                            <li><a href="">link 1</li>
+                            <li><a href="">link 2</a></li>
+                      </ul>
+                        </div>
+                          </div>
+                  </li>
+                </div>
+
+              </div>
+          </nav>
+
+
+          <!--1º bloco-->
+          <div id="cabecalho">
+
+                <!--título e logo-->
                 <img id="alternativas" src="titulo.svg">
 
                 <!--barra de pesquisa-->
                 <div class="barra_de_pesquisa">
-
+                        <!--código que adiciona barra de pesquisa-->
                         <form role="search" id="form">
                            <input type="search" id="query" name="q"
                                 placeholder="pesquisar..."
@@ -32,6 +99,8 @@
                                 </button>
                         </form>
 
+
+                        <!--javascript que faz a barra de pesquisa funcionar-->
                         <script>
                           const f = document.getElementById('form');
                           const q = document.getElementById('query');
@@ -47,86 +116,129 @@
 
                           f.addEventListener('submit', submitted);
                         </script>
-
-                        <!--botão para o próximo bloco-->
-                              <a href="#conteudo_1"><svg id="icone_seta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 00-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                                </svg>
-                              </a>
-                            </div>
                 </div>
 
+                <!--fundo mar e terra-->
+                <img id="terra_mar" src="terramar.svg">
+
+                <!--botão para o próximo bloco-->
+                <a href="#conteudo_1"><svg id="icone_seta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                  </svg>
+                </a>
+
           </div>
-
-                    </div>
-                    <div>
-        <!--abas de itens sustentáveis-->
-          <nav>
-                <ul id ="ul-principal">
-                  <li class="li-p">
-                    <a href="">
-                       PRODUTOS PARA BELEZA  </a>
-                     <ul class="ul-beleza">
-                              <li><a href="">link 1</li>
-                              <li><a href="">link 2</li>
-                              <li><a href="">link 3</li>
-                              <li><a href="">link 4</li>
-                    </ul>
-                  </li>
-                   <li class="li-p">
-                     <a href=""> ARTESANATO </a>
-                        <ul class="ul-artesanato">
-                              <li><a href="">link 1</li>
-                              <li><a href="">link 2</li>
-                              <li><a href="">link 3</li>
-                        </ul>
-                    </li>
-                   <li class="li-p">
-                     <a href=""> RECEITAS DE ALIMENTOS</a>
-                        <ul class="ul-alimentos">
-                              <li><a href="">link 1</li>
-                              <li><a href="">link 2</li>
-                        </ul>
-                    </li>
-
-
-                </ul>
-          </nav>
 
           <!--2º bloco-->
-          <div class="main" id="conteudo_1">
+          <div id="bloco_2">
 
-            <h1>T&Iacute;TULO 1</h1>
-            <p><em class="word-break">
-              Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            </em></p>
+                <img id="sist_insustentavel" src="sist_insustentavel.svg" >
+
+                <div class="main" id="conteudo_1">
+
+                  <h1><br>&nbsp;&nbsp;</br>TÍTULO 1</h1>
+                  <p><em class="word-break">
+                    Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                  </em></p>
+
+                </div>
+
+
+
+                <img id="sist_sustentavel" src="sist_sustentavel.svg" >
+
+                <div class="main" id="conteudo_2">
+
+                    <h1>T&Iacute;TULO 2</h1>
+                    <p><em class="word-break">
+                      Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    </em></p>
+
+                  </div>
+
+
+
+          <div id="bloco_3">
+
+                          <div class="main" id="hipotese_de_gaia">
+
+                              <h1>HIPÓTESE DE GAIA</h1>
+
+                          </div>
+
+                          <img id="gaia" src="logo_gaia_colorido.svg" >
+
+                          <!--texto subindo-->
+                          <div class="texto-subindo js-scroll deslizar-base">
+                              <p><em class="word-break">
+                                Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                              </em></p>
+
+                              <!--dizer para o javascript para o texto subir quando a gaia aparecer na tela-->
+                              <script>
+                                    const scrollElements = document.querySelectorAll(".texto-subindo");
+
+                                    const elementInView = (el, dividend = 1) => {
+                                      const elementTop = el.getBoundingClientRect().top;
+
+                                      return (
+                                        elementTop <=
+                                        (window.innerHeight || document.documentElement.clientHeight) / dividend
+                                      );
+                                    };
+
+                                    const elementOutofView = (el) => {
+                                      const elementTop = el.getBoundingClientRect().top;
+
+                                      return (
+                                        elementTop > (window.innerHeight || document.documentElement.clientHeight)
+                                      );
+                                    };
+
+                                    const displayScrollElement = (element) => {
+                                      element.classList.add("scrolled");
+                                    };
+
+                                    const hideScrollElement = (element) => {
+                                      element.classList.remove("scrolled");
+                                    };
+
+                                    const handleScrollAnimation = () => {
+                                      scrollElements.forEach((el) => {
+                                        if (elementInView(el, 1.25)) {
+                                          displayScrollElement(el);
+                                        } else if (elementOutofView(el)) {
+                                          hideScrollElement(el)
+                                        }
+                                      })
+                                    }
+
+                                    window.addEventListener("scroll", () => {
+                                      handleScrollAnimation();
+                                    });
+                              </script>
+                          </div>
+
+                  </div>
+                  <div id="rodape">
+
+                    <h1>ALTERNATIVAS</h1>
+
+                    <div id="links">
+                        <a href="index.html" id="home">Página Inicial</a><br><br><a href="index.html" id="home">Sobre</a>
+                    </div>
+
+
+                  </div>
+                  <div id="grupo">
+                      <h3>2021 - O Preço Além da Etiqueta</h3>
 
           </div>
 
-            <img id="sist_ruim" src="sist.ruim.png" >
 
-            <div class="main" id="conteudo_2">
 
-              <h1>T&Iacute;TULO 2</h1>
-              <p><em class="word-break">
-                Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-              </em></p>
-
-            </div>
-
-            <img id="sist_bom" src="sist.bom.png" >
-
-          <!--3º bloco-->
-          <div class="main" id="conteudo_3">
-
-              <h1>HIPÓTESE DE GAIA<h1>
-
-          </div>
-              <img id="gaia" src="logo_gaia_colorido.svg" >
 
 
       </body>
-
-
 
 </html>
