@@ -19,6 +19,65 @@
 
       <body>
 
+        <!--abas de itens sustentáveis-->
+        <nav>
+              <div class="dropdown">
+                  <button><img id="menu" src="water.svg">
+
+              </button>
+
+                <div class="dropdown-content">
+
+                <ul id ="ul-principal">
+
+                <li class="li-p">
+                  <div class="dropdown1">
+                    <button class="dropbtn">
+                      <a href="cosmeticos.html">COSMÉTICOS</a>
+                   </button>
+
+                   <div class="dropdown-content1">
+                   <ul class="ul-beleza">
+                            <li><a href="esfoliante.html">Esfoliante</a></li>
+                            <li><a href="">link 2</li>
+                            <li><a href="">link 3</li>
+                            <li><a href="">link 4</li>
+                  </ul>
+                </div>
+                </div>
+                </li>
+
+                 <li class="li-p">
+                   <div class="dropdown1">
+                   <button class="dropbtn"><a href="">ARTESANATO</a></button>
+                      <div class="dropdown-content1">
+                      <ul class="ul-artesanato">
+                            <li><a href="">link 1</li>
+                            <li><a href="">link 2</li>
+                            <li><a href="">link 3</li>
+                      </ul>
+                      </div>
+                      </div>
+                  </li>
+
+
+                 <li class="li-p">
+                    <div class="dropdown1">
+                   <button class="dropbtn"<a href="">RECEITAS DE ALIMENTOS</a></button>
+                      <div class="dropdown-content1">
+                      <ul class="ul-alimentos">
+                            <li><a href="">link 1</li>
+                            <li><a href="">link 2</a></li>
+                      </ul>
+                        </div>
+                          </div>
+                  </li>
+                </div>
+
+              </div>
+          </nav>
+
+
           <!--1º bloco-->
           <div id="cabecalho">
 
@@ -46,11 +105,11 @@
                           const f = document.getElementById('form');
                           const q = document.getElementById('query');
                           const google = 'https://www.google.com/';
-                          const site = 'nomedosite.com';
+                          const site = 'https://sustentabilidade2021.github.io/alternativas/';
 
                           function submitted(event) {
                             event.preventDefault();
-                            const url = google + site + '+' + q.value;
+                            const url = site + '+' + q.value;
                             const win = window.open(url, '_blank');
                             win.focus();
                           }
@@ -96,6 +155,8 @@
                     </em></p>
 
                   </div>
+
+
 
           <div id="bloco_3">
 
@@ -159,11 +220,22 @@
                           </div>
 
                   </div>
+                  <div id="rodape">
 
+                    <h1>ALTERNATIVAS</h1>
+
+                    <div id="links">
+                        <a href="index.html" id="home">Página Inicial</a><br><br><a href="index.html" id="home">Sobre</a>
+                    </div>
+
+
+                  </div>
+                  <div id="grupo">
+                      <h3>2021 - O Preço Além da Etiqueta</h3>
 
           </div>
 
-          <!--3º bloco-->
+
 
 
 
