@@ -2,6 +2,7 @@
 <html>
 
       <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <!--site dos ícones: https://icons.getbootstrap.com/-->
 
             <!--importar as fontes usadas-->
@@ -19,6 +20,65 @@
 
       <body>
 
+        <!--abas de itens sustentáveis-->
+        <nav>
+              <div class="dropdown">
+                  <button><img id="menu" src="water.svg">
+
+              </button>
+
+                <div class="dropdown-content">
+
+                <ul id ="ul-principal">
+
+                <li class="li-p">
+                  <div class="dropdown1">
+                    <button class="dropbtn">
+                      <a href="cosmeticos.html">COSMÉTICOS</a>
+                   </button>
+
+                   <div class="dropdown-content1">
+                   <ul class="ul-beleza">
+                            <li><a href="esfoliante.html">Esfoliante</a></li>
+                            <li><a href="">link 2</li>
+                            <li><a href="">link 3</li>
+                            <li><a href="">link 4</li>
+                  </ul>
+                </div>
+                </div>
+                </li>
+
+                 <li class="li-p">
+                   <div class="dropdown1">
+                   <button class="dropbtn"><a href="">ARTESANATO</a></button>
+                      <div class="dropdown-content1">
+                      <ul class="ul-artesanato">
+                            <li><a href="">link 1</li>
+                            <li><a href="">link 2</li>
+                            <li><a href="">link 3</li>
+                      </ul>
+                      </div>
+                      </div>
+                  </li>
+
+
+                 <li class="li-p">
+                    <div class="dropdown1">
+                   <button class="dropbtn"<a href="">RECEITAS DE ALIMENTOS</a></button>
+                      <div class="dropdown-content1">
+                      <ul class="ul-alimentos">
+                            <li><a href="">link 1</li>
+                            <li><a href="">link 2</a></li>
+                      </ul>
+                        </div>
+                          </div>
+                  </li>
+                </div>
+
+              </div>
+          </nav>
+
+
           <!--1º bloco-->
           <div id="cabecalho">
 
@@ -28,11 +88,10 @@
                 <!--barra de pesquisa-->
                 <div class="barra_de_pesquisa">
                         <!--código que adiciona barra de pesquisa-->
-                        <form role="search" id="form">
+                        <form action="/action_page.php" method="get" role="search" id="form" type="search">
+
                            <input type="search" id="query" name="q"
                                 placeholder="pesquisar..."
-                                aria-label="Search through site content">
-
                                 <button id="btn_lupa">
                                     <svg id="icone_lupa" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -41,22 +100,7 @@
                         </form>
 
 
-                        <!--javascript que faz a barra de pesquisa funcionar-->
-                        <script>
-                          const f = document.getElementById('form');
-                          const q = document.getElementById('query');
-                          const google = 'https://www.google.com/';
-                          const site = 'nomedosite.com';
 
-                          function submitted(event) {
-                            event.preventDefault();
-                            const url = google + site + '+' + q.value;
-                            const win = window.open(url, '_blank');
-                            win.focus();
-                          }
-
-                          f.addEventListener('submit', submitted);
-                        </script>
                 </div>
 
                 <!--fundo mar e terra-->
@@ -77,10 +121,20 @@
 
                 <div class="main" id="conteudo_1">
 
-                  <h1><br>&nbsp;&nbsp;</br>TÍTULO 1</h1>
-                  <p><em class="word-break">
-                    Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                  </em></p>
+                  <h1><br>&nbsp;&nbsp;</br>INSUSTENTÁVEL</h1>
+                  <p>
+                    Um sistema que lucra em virtude da exploração da classe trabalhadora e do meio ambiente.
+                    Extrai, produz, transporta e vende mercadorias que prejudicam sistematicamente a biosfera,
+                    como descreve Rachel Carson, em seu livro "Primavera Silenciosa":
+                  </p>
+                  <h1><b>&nbsp;&nbsp;"</h1>
+                        <div class= "citacao">
+                              <h2><i>Nós polvilhamos inseticidas os nossos olmos, e as primaveras seguintes se fazem silenciosas, sem mais o canto do
+                              papa-roxo – não porque tenhamos pulverizado inseticida os papos-roxos, diretamente,
+                              e sim porque o veneno viaja, passo a passo, ao longo do agora familiar ciclo de vida
+                              constituído pelos elos que são a folha do olmo, a minhoca e o papo-roxo.</i>" (CARSON.
+                              1964. p. 197).</h2>
+                        </div>
 
                 </div>
 
@@ -90,28 +144,36 @@
 
                 <div class="main" id="conteudo_2">
 
-                    <h1>T&Iacute;TULO 2</h1>
-                    <p><em class="word-break">
-                      Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    </em></p>
+                    <h1>SUSTENTÁVEL</h1>
+                    <p></p>
 
                   </div>
+
+
 
           <div id="bloco_3">
 
                           <div class="main" id="hipotese_de_gaia">
 
                               <h1>HIPÓTESE DE GAIA</h1>
+                              <p>
+
+                              </p>
 
                           </div>
 
                           <img id="gaia" src="logo_gaia_colorido.svg" >
 
                           <!--texto subindo-->
-                          <div class="texto-subindo js-scroll deslizar-base">
-                              <p><em class="word-break">
-                                Lady gagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggaabhadjkanlmcslçkjbkhcsj riahannnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                              </em></p>
+                          <div id="container">
+                            <div class="texto-subindo js-scroll deslizar-base">
+                              <p>
+                                Na Hipótese de Gaia, elaborada por James Lovelock e descrita no livro “<i>Gaia – A New Look at Life on Earth</i>”,
+                                o autor explica como a Terra é um <b>organismo vivo</b>, que se autorregula por meio
+                                de todos os fatores bióticos e abióticos que o compõe. <br><br>Eles <b>regulam o clima</b>, <b>reciclam a matéria</b>
+                                e  <b>combatem suas doenças</b>, mantendo assim o equilíbrio para manutenção da vida.<br><br>O preço dos produtos
+                                insustentáveis é justamente a <b>desregulação deste superorganismo</b>.
+                              </p>
 
                               <!--dizer para o javascript para o texto subir quando a gaia aparecer na tela-->
                               <script>
@@ -157,14 +219,24 @@
                                     });
                               </script>
                           </div>
+                          </div>
 
                   </div>
+                  <div id="rodape">
+
+                    <h1>ALTERNATIVAS</h1>
+
+                    <div id="links">
+                        <a href="index.html" id="home">Página Inicial</a><a href="index.html" id="home">Sobre</a>
+                    </div>
+
+
+                  </div>
+                  <div id="grupo">
+                      <h3>2021 - O Preço Além da Etiqueta</h3>
 
 
           </div>
-
-          <!--3º bloco-->
-
 
 
       </body>

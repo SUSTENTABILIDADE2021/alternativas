@@ -1,0 +1,173 @@
+/*configurações do html----------------------*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
+h1 {
+  font-family: 'Roboto';
+  font-size: 5vw;
+  font-weight: bolder;
+  text-align: justify;
+  margin-bottom: 4vw;
+  margin-top: 2.5vw;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+      font-size: 50px;
+  }
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-weight: bolder;
+  text-align: justify;
+  margin-top: 2.5;
+  padding: 0px;
+  color:#282828;
+  font-size: calc(25px + (26 - 25) * ((100vw - 300px) / (1600 - 300)));
+}
+@media screen and (max-width: 600px) {
+  h2 {
+      font-size: 25px;
+  }
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  margin-top: 2.5;
+  padding: 0px;
+  font-size: calc(1px + (26 - 1) * ((100vw - 300px) / (1600 - 300)));
+}
+@media screen and (max-width: 600px) {
+  h3 {
+      font-size: 25px;
+  }
+}
+
+p{
+  color: #282828;
+  font-family: 'Open Sans';
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  p {
+      font-size: 18px;
+  }
+}
+
+
+.word-break {
+   word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  text-align: justify;
+  color: white;
+}
+
+/*cabeçalho------------------------------------*/
+#cabecalho {
+  height: 8vw;
+}
+
+img#alternativas {
+      position: absolute;
+      width: 30vw;
+      left: 0%;
+      right: 0%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5vw;
+      max-width: 100%;
+}
+
+img#terra_mar {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height:12vw;
+    top:3vw;
+}
+
+/*esfoliante------------------------------------*/
+#esfoliante {
+  margin-top: 12vw;
+  padding-left:7vw;
+  color: #e76f51ff;
+  width: 45%;
+  margin-bottom: 25vw;
+}
+.imagem-subindo {
+padding-left: 50vw;
+}
+
+#aveia {
+  width: 35vw;
+  height: auto;
+  position: absolute;
+  border-radius: 15px;
+  margin-top: -5vw;
+}
+
+
+/**Styling scrollable elements*/
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 1300ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.deslizar-base {
+  animation: fade-in-bottom 1.3s ;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*rodapé------------------------------*/
+#rodape {
+  background-color:#2a9d8fff;
+  color: white;
+  height: 20vw;
+  padding-left: 7vw;
+  padding-top: 2vw;
+  z-index: 0;
+}
+
+#links {
+  padding-left: 50%;
+  margin-top: -10%;
+}
+
+#grupo {
+  height:4vw;
+  background-color: #264653ff;
+  z-index: 1;
+  margin-top: -4vw;
+  color: white;
+  text-align: center;
+  bottom: 0;
+}
