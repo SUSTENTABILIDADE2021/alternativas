@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+            <!--site dos ícones: https://icons.getbootstrap.com/-->
+
+            <!--importar as fontes usadas-->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+            <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+            <!--icone que aparece na página no navegador-->
+            <link rel="stylesheet" href="style_esfoliante.css">
+
+            <link rel="shortcut icon" href="favicon.ico" />
+
+            <!--título da página no navegador-->
+            <title>Alternativas</title>
+
+      </head>
+
+      <body>
+          <div id="cabecalho">
+            <!--título e logo-->
+            <img id="alternativas" src="titulo.svg">
+            <img id="terra_mar" src="terramar.png">
+
+          </div>
+
+          <div id="esfoliante">
+
+            <h1>Esfoliante Natural:</h1>
+
+            <h2>Ingredientes:</h2>
+
+            <!--efeito imagem-->
+            <div class="imagem-subindo js-scroll deslizar-base">
+                <img id="aveia" src="ingrediente.jpg">
+
+                <!--dizer para o javascript para o texto subir quando a gaia aparecer na tela-->
+                <script>
+                      const scrollElements = document.querySelectorAll(".imagem-subindo");
+
+                      const elementInView = (el, dividend = 1) => {
+                        const elementTop = el.getBoundingClientRect().top;
+
+                        return (
+                          elementTop <=
+                          (window.innerHeight || document.documentElement.clientHeight) / dividend
+                        );
+                      };
+
+                      const elementOutofView = (el) => {
+                        const elementTop = el.getBoundingClientRect().top;
+
+                        return (
+                          elementTop > (window.innerHeight || document.documentElement.clientHeight)
+                        );
+                      };
+
+                      const displayScrollElement = (element) => {
+                        element.classList.add("scrolled");
+                      };
+
+                      const hideScrollElement = (element) => {
+                        element.classList.remove("scrolled");
+                      };
+
+                      const handleScrollAnimation = () => {
+                        scrollElements.forEach((el) => {
+                          if (elementInView(el, 1.25)) {
+                            displayScrollElement(el);
+                          } else if (elementOutofView(el)) {
+                            hideScrollElement(el)
+                          }
+                        })
+                      }
+
+                      window.addEventListener("scroll", () => {
+                        handleScrollAnimation();
+                      });
+               </script>
+            </div>
+
+            <p>• Aveia;<br>• Canela;<br>• Água;</p>
+
+            <h2>Preparo:</h2>
+
+            <p><em class="word-break">Lady gagagaggagagagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</em></p>
+
+          </div>
+
+          <div id="rodape">
+
+            <h1>ALTERNATIVAS</h1>
+
+            <div id="links">
+                <p><a href="index.html" id="home">Página Inicial</a><br><br><a href="index.html" id="home">Sobre</a></p>
+            </div>
+
+
+          </div>
+          <div id="grupo">
+              <h3>2021 - O Preço Além da Etiqueta</h3>
+
+      </body>
+
+
+
+</html>

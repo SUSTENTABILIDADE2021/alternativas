@@ -1,0 +1,156 @@
+/*configurações do html----------------------*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+/*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
+h1 {
+  font-family: 'Roboto';
+  font-size: 5vw;
+  font-weight: bolder;
+  text-align: justify;
+  margin-bottom: 4vw;
+  margin-top: 2.5vw;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+      font-size: 50px;
+  }
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-weight: bolder;
+  text-align: justify;
+  margin-top: 2.5;
+  padding: 0px;
+  color:#282828;
+  font-size: calc(25px + (26 - 25) * ((100vw - 300px) / (1600 - 300)));
+}
+@media screen and (max-width: 600px) {
+  h2 {
+      font-size: 25px;
+  }
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-weight: normal;
+  padding: 0px;
+  margin: 0;
+  margin-top: 1vw;
+  font-weight: 400;
+  font-size: calc(15px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+@media screen and (max-width: 600px) {
+  h3 {
+      font-size: 25px;
+  }
+}
+
+p{
+  color: #282828;
+  font-family: 'Open Sans';
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  p {
+      font-size: 18px;
+  }
+}
+
+
+.word-break {
+   word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Roboto';
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+  text-emphasis-color: none;
+
+}
+
+/*cabeçalho------------------------------------*/
+#cabecalho {
+  height: 8vw;
+}
+
+img#alternativas {
+      position: absolute;
+      width: 30vw;
+      left: 0%;
+      right: 0%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5vw;
+      max-width: 100%;
+}
+
+img#terra_mar {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height:12vw;
+    top:3vw;
+}
+/*conteudos-----------------------------*/
+#conteudos {
+  margin-top: 15vw;
+  margin-bottom: 7vw;
+  display: grid;
+  grid-gap: 3vw;
+  grid-template-columns: repeat(auto-fill, 20vw);
+  width: 90%;
+  margin-left: 3.2vw;
+}
+
+.bloco {
+  min-width: 20vw;
+  height: 25vw;
+  border-radius: 15px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding-bottom: 0;
+  margin: 2vw;
+  color: #282828;
+}
+#aveia {
+  width: 20vw;
+  height: auto;
+  border-radius: 15px;
+}
+
+/*rodapé------------------------------*/
+#rodape {
+  background-color:#2a9d8fff;
+  color: white;
+  height: 20vw;
+  padding-left: 7vw;
+  padding-top: 2vw;
+  z-index: 0;
+}
+
+#links {
+  padding-left: 50%;
+  margin-top: -10%;
+  color: white;
+}
+
+#grupo {
+  height:4vw;
+  background-color: #264653ff;
+  z-index: 1;
+  margin-top: -4vw;
+  color: white;
+  text-align: center;
+  bottom: 0;
+}
