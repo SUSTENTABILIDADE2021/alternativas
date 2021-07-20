@@ -10,16 +10,17 @@ body {
 /*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
 h1 {
   font-family: 'Roboto';
-  font-size: 5vw;
+  font-size: 6.5vw;
   font-weight: bolder;
-  text-align: justify;
-  margin-bottom: 4vw;
-  margin-top: 2.5vw;
+  margin-bottom: 0px;
+  padding: 0px;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 625px) {
   h1 {
-      font-size: 50px;
+    font-size: 8vw;
   }
+
 }
 
 h2 {
@@ -31,24 +32,19 @@ h2 {
   color:#282828;
   font-size: calc(25px + (26 - 25) * ((100vw - 300px) / (1600 - 300)));
 }
-@media screen and (max-width: 600px) {
-  h2 {
-      font-size: 25px;
-  }
-}
 
 h3 {
-  font-family: 'Roboto';
-  font-weight: normal;
-  padding: 0px;
-  margin: 0;
+  font-family: 'Open Sans';
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+  line-height: normal;
+  font-weight: 600;
   margin-top: 1vw;
-  font-weight: 400;
-  font-size: calc(15px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 625px) {
   h3 {
-      font-size: 25px;
+    font-size: 14px;
   }
 }
 
@@ -58,12 +54,6 @@ p{
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   text-align: justify;
 }
-@media screen and (max-width: 600px) {
-  p {
-      font-size: 18px;
-  }
-}
-
 
 .word-break {
    word-break: break-all;
@@ -86,13 +76,14 @@ a {
 
 img#alternativas {
       position: absolute;
-      width: 30vw;
+      width: 40vw;
       left: 0%;
       right: 0%;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 1.5vw;
+      margin-top: 2vw;
       max-width: 100%;
+      z-index: 1;
 }
 
 img#terra_mar {
@@ -100,21 +91,34 @@ img#terra_mar {
     margin: 0;
     width: 100%;
     height:12vw;
-    top:3vw;
+    top:6vw;
+    margin-bottom: 1vw;
+    z-index: 0;
 }
 /*conteudos-----------------------------*/
+
+#cosmeticos{
+  margin-top: 10vw;
+  text-align: center;
+  color: #e76f51ff;
+  position: relative;
+  margin-bottom: 5vw;
+}
 #conteudos {
-  margin-top: 15vw;
-  margin-bottom: 7vw;
   display: grid;
-  grid-gap: 3vw;
   grid-template-columns: repeat(auto-fill, 20vw);
+  grid-row-gap: 2vw;
+  grid-column-gap: 10vw;
+  background-color: none;
   width: 90%;
-  margin-left: 3.2vw;
+  margin-top: 3vw;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .bloco {
-  min-width: 20vw;
+  width: 25vw;
   height: 25vw;
   border-radius: 15px;
   background-color: #eeeeee;
@@ -122,35 +126,62 @@ img#terra_mar {
   padding-bottom: 0;
   margin: 2vw;
   color: #282828;
+  position: relative;
 }
-#aveia {
-  width: 20vw;
+.imagem {
+  width: 25vw;
   height: auto;
   border-radius: 15px;
 }
 
+@media screen and (max-width: 625px) {
+  #conteudos {
+    grid-template-columns: repeat(auto-fill, 20vw);
+    grid-column-gap: 25vw;
+    grid-row-gap: 15vw;
+    margin-left: -7.5vw;
+  }
+
+  .bloco {
+    background-color: #F0F0F0;
+    border: none;
+    text-align: center;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 7px;
+    margin-bottom: 0vw;
+  }
+
+  .imagem {
+    width: 40vw;
+    height: auto;
+    border-radius: 15px;
+  }
+
+}
 /*rodapé------------------------------*/
 #rodape {
-  background-color:#2a9d8fff;
+  background-color: #2a9d8fff;
   color: white;
-  height: 20vw;
   padding-left: 7vw;
-  padding-top: 2vw;
+  padding-top: 1vw;
   z-index: 0;
+  padding-bottom: 5vw;
+  position: relative;
 }
 
 #links {
-  padding-left: 50%;
-  margin-top: -10%;
+  padding-left: 70%;
+  margin-top: -8%;
   color: white;
 }
 
 #grupo {
-  height:4vw;
+  height: 4vw;
   background-color: #264653ff;
   z-index: 1;
-  margin-top: -4vw;
   color: white;
   text-align: center;
-  bottom: 0;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
 }
