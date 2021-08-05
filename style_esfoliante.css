@@ -9,17 +9,16 @@ body {
 /*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
 h1 {
   font-family: 'Roboto';
-  font-size: 6.5vw;
+  font-size: 5vw;
   font-weight: bolder;
-  margin-bottom: 0px;
-  padding: 0px;
+  text-align: justify;
+  margin-bottom: 4vw;
+  margin-top: 2.5vw;
 }
-
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 600px) {
   h1 {
-    font-size: 8vw;
+      font-size: 50px;
   }
-
 }
 
 h2 {
@@ -29,21 +28,24 @@ h2 {
   margin-top: 2.5;
   padding: 0px;
   color:#282828;
-  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(25px + (26 - 25) * ((100vw - 300px) / (1600 - 300)));
+}
+@media screen and (max-width: 600px) {
+  h2 {
+      font-size: 25px;
+  }
 }
 
 h3 {
   font-family: 'Open Sans';
-  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
-  text-align: center;
-  line-height: normal;
-  font-weight: 600;
-  margin-top: 1vw;
+  font-weight: normal;
+  margin-top: 2.5;
+  padding: 0px;
+  font-size: calc(1px + (26 - 1) * ((100vw - 300px) / (1600 - 300)));
 }
-
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 600px) {
   h3 {
-    font-size: 14px;
+      font-size: 25px;
   }
 }
 
@@ -53,6 +55,12 @@ p{
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   text-align: justify;
 }
+@media screen and (max-width: 600px) {
+  p {
+      font-size: 18px;
+  }
+}
+
 
 .word-break {
    word-break: break-all;
@@ -60,14 +68,11 @@ p{
 
 a {
   text-decoration: none;
-  color: inherit;
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  text-align: center;
-  text-emphasis-color: none;
-
+  text-align: justify;
+  color: white;
 }
-
 
 /*cabeçalho------------------------------------*/
 #cabecalho {
@@ -76,14 +81,13 @@ a {
 
 img#alternativas {
       position: absolute;
-      width: 40vw;
+      width: 30vw;
       left: 0%;
       right: 0%;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 2vw;
+      margin-top: 1.5vw;
       max-width: 100%;
-      z-index: 1;
 }
 
 img#terra_mar {
@@ -91,18 +95,15 @@ img#terra_mar {
     margin: 0;
     width: 100%;
     height:12vw;
-    top:6vw;
-    margin-bottom: 1vw;
-    z-index: 0;
+    top:3vw;
 }
 
 /*esfoliante------------------------------------*/
 #esfoliante {
-  margin-top: 15vw;
+  margin-top: 12vw;
   padding-left:7vw;
   color: #e76f51ff;
   width: 45%;
-  height: 100%;
   margin-bottom: 25vw;
 }
 .imagem-subindo {
@@ -148,27 +149,25 @@ padding-left: 50vw;
 
 /*rodapé------------------------------*/
 #rodape {
-  background-color: #2a9d8fff;
+  background-color:#2a9d8fff;
   color: white;
+  height: 20vw;
   padding-left: 7vw;
-  padding-top: 1vw;
+  padding-top: 2vw;
   z-index: 0;
-  padding-bottom: 5vw;
-  position: relative;
 }
 
 #links {
-  padding-left: 70%;
-  margin-top: -8%;
-  color: white;
+  padding-left: 50%;
+  margin-top: -10%;
 }
 
 #grupo {
-  height: 4vw;
+  height:4vw;
   background-color: #264653ff;
   z-index: 1;
+  margin-top: -4vw;
   color: white;
   text-align: center;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
+  bottom: 0;
 }

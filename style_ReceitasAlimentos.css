@@ -123,26 +123,12 @@ img#terra_mar {
   margin: 2vw;
   color: #282828;
 }
-#aveia {
+#SistemaAquaponico1{
   width: 20vw;
   height: auto;
   border-radius: 15px;
 }
-#desodoranteProduto {
-  width: 20vw;
-  height: auto;
-  border-radius: 15px;
-}
-#EcopadFoto {
-  width: 20vw;
-  height: auto;
-  border-radius: 15px;
-}
-#Xampu {
-  width: 20vw;
-  height: auto;
-  border-radius: 15px;
-}
+
 /*rodapé------------------------------*/
 #rodape {
   background-color:#2a9d8fff;
