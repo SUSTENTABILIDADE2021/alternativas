@@ -4,7 +4,6 @@ body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
-  width: 100%;
 }
 
 /*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
@@ -38,13 +37,11 @@ h2 {
 }
 
 h3 {
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-weight: normal;
+  margin-top: 2.5;
   padding: 0px;
-  margin: 0;
-  margin-top: 1vw;
-  font-weight: 400;
-  font-size: calc(15px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(1px + (26 - 1) * ((100vw - 300px) / (1600 - 300)));
 }
 @media screen and (max-width: 600px) {
   h3 {
@@ -71,12 +68,10 @@ p{
 
 a {
   text-decoration: none;
-  color: inherit;
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  text-align: center;
-  text-emphasis-color: none;
-
+  text-align: justify;
+  color: white;
 }
 
 /*cabeçalho------------------------------------*/
@@ -102,47 +97,58 @@ img#terra_mar {
     height:12vw;
     top:3vw;
 }
-/*conteudos-----------------------------*/
-#conteudos {
-  margin-top: 15vw;
-  margin-bottom: 7vw;
-  display: grid;
-  grid-gap: 3vw;
-  grid-template-columns: repeat(auto-fill, 20vw);
-  width: 90%;
-  margin-left: 3.2vw;
+
+/*esfoliante------------------------------------*/
+#PraticasDiarias1 {
+  margin-top: 12vw;
+  padding-left:7vw;
+  color: #e76f51ff;
+  width: 45%;
+  margin-bottom: 25vw;
+}
+.imagem-subindo {
+padding-left: 50vw;
 }
 
-.bloco {
-  min-width: 20vw;
-  height: 25vw;
-  border-radius: 15px;
-  background-color: #eeeeee;
-  text-align: center;
-  padding-bottom: 0;
-  margin: 2vw;
-  color: #282828;
-}
-#aveia {
-  width: 20vw;
+#PraticasDiarias {
+  width: 35vw;
   height: auto;
+  position: absolute;
   border-radius: 15px;
+  margin-top: -5vw;
 }
-#desodoranteProduto {
+#DescartarOpcaoCarro {
+
   width: 20vw;
-  height: auto;
-  border-radius: 15px;
 }
-#EcopadFoto {
-  width: 20vw;
-  height: auto;
-  border-radius: 15px;
+/**Styling scrollable elements*/
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 1300ms;
 }
-#Xampu {
-  width: 20vw;
-  height: auto;
-  border-radius: 15px;
+
+.js-scroll.scrolled {
+  opacity: 1;
 }
+
+.scrolled.deslizar-base {
+  animation: fade-in-bottom 1.3s ;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*rodapé------------------------------*/
 #rodape {
   background-color:#2a9d8fff;
@@ -156,7 +162,6 @@ img#terra_mar {
 #links {
   padding-left: 50%;
   margin-top: -10%;
-  color: white;
 }
 
 #grupo {

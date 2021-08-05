@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+            <!--site dos ícones: https://icons.getbootstrap.com/-->
+
+            <!--importar as fontes usadas-->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+            <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+            <!--icone que aparece na página no navegador-->
+            <link rel="stylesheet" href="style_SistemaAquaponico.css">
+
+            <link rel="shortcut icon" href="favicon.ico" />
+
+            <!--título da página no navegador-->
+            <title>Alternativas</title>
+
+      </head>
+
+      <body>
+          <div id="cabecalho">
+            <!--título e logo-->
+            <img id="alternativas" src="titulo.svg">
+            <img id="terra_mar" src="terramar.png">
+
+          </div>
+
+          <div id="SistemaAquaponico">
+
+            <h1>Sistema Aquaponico:</h1>
+            <p><em class="word-break"></em>A aquaponia é uma técnica realizada para que de forma sustentável possa ser integrado  a aquicultura convencional (criação de organismos aquáticos tais como peixes, lagostas e camarões) associada à hidroponia (cultivo de plantas em água), ocorrendo uma verdadeira simbiose entre as espécies.
+            </p>
+            <h2>Itens necessários:</h2>
+
+            <!--efeito imagem-->
+            <div class="imagem-subindo js-scroll deslizar-base">
+                <img id="SistemaAquaponico1" src="sistemaAquaponico .png">
+
+                <!--dizer para o javascript para o texto subir quando a gaia aparecer na tela-->
+                <script>
+                      const scrollElements = document.querySelectorAll(".imagem-subindo");
+
+                      const elementInView = (el, dividend = 1) => {
+                        const elementTop = el.getBoundingClientRect().top;
+
+                        return (
+                          elementTop <=
+                          (window.innerHeight || document.documentElement.clientHeight) / dividend
+                        );
+                      };
+
+                      const elementOutofView = (el) => {
+                        const elementTop = el.getBoundingClientRect().top;
+
+                        return (
+                          elementTop > (window.innerHeight || document.documentElement.clientHeight)
+                        );
+                      };
+
+                      const displayScrollElement = (element) => {
+                        element.classList.add("scrolled");
+                      };
+
+                      const hideScrollElement = (element) => {
+                        element.classList.remove("scrolled");
+                      };
+
+                      const handleScrollAnimation = () => {
+                        scrollElements.forEach((el) => {
+                          if (elementInView(el, 1.25)) {
+                            displayScrollElement(el);
+                          } else if (elementOutofView(el)) {
+                            hideScrollElement(el)
+                          }
+                        })
+                      }
+
+                      window.addEventListener("scroll", () => {
+                        handleScrollAnimation();
+                      });
+               </script>
+            </div>
+
+             <p>• 1 Caixa Plástica 36 Lt;<br>• 1 caixa plástica 18 Lt;<br>• 1 metro de cano de 20mm;<br>• 50cm de cano de 50mm;<br>• 50cm de cano de 100mm;<br>• 1 flange de 20mm;<br>• 5 conexões do tipo joelho para 20 mm;<br>• 1 conexão T para 20 mm;
+            <br>• 2 registros para tubo 20 mm;  <br>• 1 luva redução de 25 mm para 20 mm; <br>• 1 adaptador bolsa rosca 20 mm;<br>• 1 conexão para gás bico mangueira 3/8; <br>• 10 cm de mangueira plástica; <br>• 2 abraçadeira para mangueira de gás; <br>• 1 bomba submersa para aquário vazão 1000 Lt/hora 110 volts;</p>
+
+              <h2>Preparo:</h2>
+
+              <p><em class="word-break"></em>1. Na caixa plástica menor, faz-se um furo utilizando a serra copo, de tal forma que se encaixe a flange de 20 mm.</p>
+              <img id="passo1" src="passo1.png">
+
+              <p><em class="word-break"></em>2. Faz-se a adaptação do tubo com a bomba submersa. Encaixe da mangueira na bomba submersa e no adaptador com rosca para encaixe de tubo de 20 mm.</p>
+              <img id="passo2" src="passo2.png">
+
+                <p><em class="word-break"></em>3. Instala-se as demais conexões como na figura 6 abaixo. Encaixe das conexões e registros para tubo de 20 mm.</p>
+                <img id="passo3" src="passo3.png">
+
+                <p><em class="word-break"></em>4. Enche-se a caixa inferior e maior com água (para este sistema, utilizou-se 25 Lt de água mineral), cujo ph alcalino foi corrigido com corretor ACIDI. E depois, acondiciona-se o saco contendo os peixes para que, estes, possam se aclimatizar a nova temperatura.</p>
+                <img id="passo4" src="passo4.png">
+
+                <p><em class="word-break"></em>5. Em seguida monta-se o sistema de sifão que será acondicionado sobre a flange na parte interna da caixa superior. O sistema de sifão consiste no cano de 100 mm com quepe que terá a uns 15 cm da sua base furada, para permitir a entrada de água. Este cano serve como sistema de inspeção. Outro cano de 50 mm com quepe, terá a borda inferior furada. E, finalmente um pedaço de cano de 20 mm com a luva de redução de 25 mm para 20 mm. As medidas utilizadas neste sistema foram: 30 cm do cano de 100 mm; 20 cm do cano de 50 mm; 10 cm do cano de 20 mm. O encaixe é feito conectando-se o cano de 20 mm com a luva de redução sobre a flange, cobrindo-o com o cano de 50 mm e em seguida, fechando o sistema com o cano de 100 mm.</p>
+                <img id="passo5" src="passo5.png">
+
+                <p><em class="word-break"></em>6. Introduz-se a argila expandida, e acondiciona-se as plantas. Para um melhor desenvolvimento, sugere-se plantar os vegetais de porte maior no fundo (figura 9). Neste sistema, o alecrim e o manjericão. A frente destes plantou-se os outros vegetais citados (salsa, alface e cebolinha)... Solta-se os peixes e liga-se o sistema.</p>
+                <img id="passo6" src="passo6.png">
+          </div>
+
+          <div id="rodape">
+
+            <h1>ALTERNATIVAS</h1>
+
+            <div id="links">
+                <p><a href="index.html" id="home">Página Inicial</a><br><br><a href="index.html" id="home">Sobre</a></p>
+            </div>
+
+
+          </div>
+          <div id="grupo">
+              <h3>2021 - O Preço Além da Etiqueta</h3>
+
+      </body>
+
+
+
+</html>
