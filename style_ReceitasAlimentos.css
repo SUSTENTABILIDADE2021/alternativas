@@ -6,7 +6,88 @@ body {
   scroll-behavior: smooth;
   width: 100%;
 }
+/*conteudos-----------------------------*/
+#conteudos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20vw);
+  grid-row-gap: 2vw;
+  grid-column-gap: 10vw;
+  background-color: none;
+  width: 90%;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
 
+.bloco {
+  width: 25vw;
+  border-radius: 15px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding-bottom: 0;
+  margin: 2vw;
+  color: #282828;
+  position: relative;
+}
+.imagem {
+  width: 25vw;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 625px) {
+  #conteudos {
+    grid-template-columns: repeat(auto-fill, 20vw);
+    grid-column-gap: 25vw;
+    grid-row-gap: 15vw;
+    margin-left: -7.5vw;
+  }
+
+  .bloco {
+    background-color: #F0F0F0;
+    border: none;
+    text-align: center;
+    width: 40vw;
+    border-radius: 7px;
+    margin-bottom: 0vw;
+  }
+
+  .imagem {
+    width: 40vw;
+    height: auto;
+    border-radius: 15px;
+  }
+
+}
+
+
+  /*rodapé------------------------------*/
+  #rodape {
+    background-color: #2a9d8fff;
+    color: white;
+    padding-left: 7vw;
+    padding-top: 1vw;
+    z-index: 0;
+    padding-bottom: 5vw;
+    position: relative;
+  }
+
+  #links {
+    padding-left: 70%;
+    margin-top: -8%;
+    color: white;
+  }
+
+  #grupo {
+    background-color: #264653ff;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
 /*não especificar a cor do título nos <h>, daí da pra especificar a cor para cada div*/
 h1 {
   font-family: 'Roboto';
